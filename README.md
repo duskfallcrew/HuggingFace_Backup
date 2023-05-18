@@ -1,5 +1,5 @@
 # HuggingFace_Backup
-Code yoinked from Nocrypt, notebook literally just has his credits in there because we wanted a seperate notebook for backups besides just the stable diffusion settings.  This includes some extra toys like Imjoy-Elfinder and Google Drive mount.  We don't know how to code, and there may not be a TON of updates on this.
+A colab notebook to be able to upload backups of files like Stable Diffusion models, code repos or otherwise. May need tweaking a little in future but I don't code so this is funny. 
 
 # Hugging Face Backup - Upload your junk from Google Drive
 *Quickly upload stuff like merged models to huggingface*
