@@ -18,5 +18,39 @@ WE TAKE NO CREDIT ON THIS. FOLLOW NOCRYPTS STUFF HERE:
 <small> You can find updates on NoCrypt's toys: https://discord.gg/touhouai
 
 <small> Earth & Dusk Discord because REASONS: https://discord.gg/5t2kYxt7An
+  
+ ## WAIT! Just a warning of things you'll need to be able to change when you use this notebook: 
+  ## How to set up the files
 
-# Head off to use this colab here: https://github.com/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb
+What you need to NOW sadly is just replace certain "code" or locations with the locations of where you need to back up to your folder. 
+
+### Double click on the `UPLOAD VIA HUGGINGFACE` section and see the following section:
+paths_map 
+    
+    `Models`  /content/sdw/models/Stable-diffusion
+    
+    `VAEs`  /content/sdw/models/VAE
+    
+    `LORAs`  /content/sdw/models/Lora
+    
+    `Embeddings`  /content/sdw/embeddings
+   
+    `Hypernetworks`  /content/sdw/models/hypernetworks
+
+
+You will need to change the `MODELS` section or any of the above sections to whatever folder you're looking to back up.  It's easy as just looking on the side file browser, scrolling through and copying the path of the folder in question. 
+
+Example: `/content/drive/MyDrive/cagliostro-colab-ui` may be your content folder you're looking for, just copy the path and paste it to one of the above sections.
+
+
+<small> Sadly I don't code. So there's no easier way of doing this LOL. 
+
+### Also Note! 
+
+Make sure you `MOUNT` your google drive (I have stated this is optional, as some people may use command line to upload), I've patched in `Imjoy-Elfinder` for kicks. - Visual people like this, I know I do.
+
+### MAKE SURE: 
+
+You create a huggingface token, go to [this link](https://huggingface.co/settings/tokens), then `create new token` or copy available token with the `Write` role.
+
+## Head off to use this colab here: https://github.com/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb
