@@ -1,10 +1,21 @@
 
+-----------------
+**WE TAKE NO CREDIT ON THIS. FOLLOW NOCRYPTS STUFF HERE:**
+
+[![](https://dcbadge.vercel.app/api/shield/442099748669751297?style=flat)](https://lookup.guru/442099748669751297) [![ko-fi](https://img.shields.io/badge/Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/nocrypt) [![ko-fi](https://img.shields.io/badge/Patreon-F1465A?logo=patreon&logoColor=white&style=flat)](https://patreon.com/nocrypt) 
+
+
 <a target="_blank" href="https://colab.research.google.com/github/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
 ![Discord](https://img.shields.io/discord/1024442483750490222?label=Earth%26Dusk&style=plastic)
 
+
+☢ You can find updates on NoCrypt's toys via ProjectAI/Tohou Discord: https://discord.gg/touhouai
+
+
+-----------------
 # **Hugging Face Backup**
 <small> An extremely weird fork of content from Nocrypt's notebook by a DID system that has no clue how to code. We'd call it opinionated, but it's not a WebUI, so apart from ElFinder, free users should be able to use this.
 
@@ -53,17 +64,6 @@ Make sure you `MOUNT` your google drive, I've patched in `Imjoy-Elfinder` for ki
 -----------------
 **<small> *Forked from LYNN - AND NOCRYPT - Literally just yoinked it from this notebook:* https://colab.research.google.com/drive/1wEa-tS10h4LlDykd87TF5zzpXIIQoCmq**
 
------------------
-**WE TAKE NO CREDIT ON THIS. FOLLOW NOCRYPTS STUFF HERE:**
-
-[![](https://dcbadge.vercel.app/api/shield/442099748669751297?style=flat)](https://lookup.guru/442099748669751297) [![ko-fi](https://img.shields.io/badge/Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/nocrypt) [![ko-fi](https://img.shields.io/badge/Patreon-F1465A?logo=patreon&logoColor=white&style=flat)](https://patreon.com/nocrypt) 
-
-
-☢ <small> You can find updates on NoCrypt's toys: https://discord.gg/touhouai
-
-☢ <small> Earth & Dusk Discord because REASONS: https://discord.gg/5t2kYxt7An
-
------------------
 
 
 
