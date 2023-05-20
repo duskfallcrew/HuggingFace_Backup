@@ -1,7 +1,9 @@
 
-[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/Naereen/badges](https://colab.research.google.com/drive/1HWCsjAL9sH3lpb-5YW8xzQNNqz_G5eNq))
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)]((https://colab.research.google.com/drive/1HWCsjAL9sH3lpb-5YW8xzQNNqz_G5eNq)
 
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)]([https://GitHub.com/Naereen/StrapDown.js/stargazers/](https://github.com/kieranxsomer/HuggingFace_Backup))
+
+
+![Discord](https://img.shields.io/discord/1024442483750490222?label=Earth%26Dusk&style=plastic)
 
 # **Hugging Face Backup**
 <small> An extremely weird fork of content from Nocrypt's notebook by a DID system that has no clue how to code. We'd call it opinionated, but it's not a WebUI, so apart from ElFinder, free users should be able to use this.
