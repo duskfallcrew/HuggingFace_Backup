@@ -64,7 +64,8 @@ Make sure you `MOUNT` your google drive, I've patched in `Imjoy-Elfinder` for ki
 -----------------
 **<small> *Forked from LYNN - AND NOCRYPT - Literally just yoinked it from this notebook:* https://colab.research.google.com/drive/1wEa-tS10h4LlDykd87TF5zzpXIIQoCmq**
 
-
+Jupyter notebook for VAST, RUNPOD and other rented GPUs forks code from here: https://github.com/victorchall/EveryDream2trainer
+(Instructions are different then the colab one, the colab one MAY Not work on vast or main jupyter outside of google colab)
 
 
 
