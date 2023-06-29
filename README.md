@@ -1,9 +1,4 @@
 
------------------
-**WE TAKE NO CREDIT ON THIS. FOLLOW NOCRYPTS STUFF HERE:**
-
-[![](https://dcbadge.vercel.app/api/shield/442099748669751297?style=flat)](https://lookup.guru/442099748669751297) [![ko-fi](https://img.shields.io/badge/Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/nocrypt) [![ko-fi](https://img.shields.io/badge/Patreon-F1465A?logo=patreon&logoColor=white&style=flat)](https://patreon.com/nocrypt) 
-
 
 <a target="_blank" href="https://colab.research.google.com/github/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
@@ -11,35 +6,56 @@
 
 ![Discord](https://img.shields.io/discord/1024442483750490222?label=Earth%26Dusk&style=plastic)
 
-
-☢ You can find updates on NoCrypt's toys via ProjectAI/Tohou Discord: https://discord.gg/touhouai
-
-
------------------
-# **Hugging Face Backup**
-<small> An extremely weird fork of content from Nocrypt's notebook by a DID system that has no clue how to code. We'd call it opinionated, but it's not a WebUI, so apart from ElFinder, free users should be able to use this.
-
-## ***❤❤❤❤❤❤❤❤❤❤❤***
-*Quickly upload stuff like merged models to huggingface*
------------------
-<small>Code yoinked from Nocrypt, notebook literally just has his credits in there because we wanted a seperate notebook for backups besides just the stable diffusion settings. This includes some extra toys like Imjoy-Elfinder and Google Drive mount. We don't know how to code, and there may not be a TON of updates on this.
-
-
-
------------------
-## ♦♦ **COLAB UPDATES** ♦♦
 If you've copied this to drive and it's no longer working check here: https://github.com/kieranxsomer/HuggingFace_Backup
 -----------------
-### ✅ **Mount Drive!**
-This is extremely optional, but y'know if you need it! 
+# **Hugging Face Backup**
+<small> An extremely weird fork of content from Nocrypt's notebook, and as well as EveryDream2Trainer for JupyterLabs by a DID system that has no clue how to code. We'd call it opinionated! This is MISSING google stuff, we want to MAYBE add ocalmfuse to it eventually, it is NOW missing EMJOY finder because it's useless in a jupyter environment. (It is! LOL you can easy find stuff otherwise!)  BOTH VERSIONS will work on Colab, but Jupyter only works on NON google instances. Jupyter version won't connect to your google drive - it'll only connect to a certain folder.  I'm working on things, I don't know how to program *CRIES*. 
+
+*Quickly upload stuff like merged models to huggingface*
 
 -----------------
+
+## ♦♦ **JUPYTER NOTEBOOK INSTRUCTIONS (NOT COLAB)** ♦♦
+
+###  **HUGGING FACE HUB BACKUP** 
+
+This. now works at RUNPOD AND VAST, and due to the patching should work with all file types, but see box 3 for what file types are suggested. 
+
+### ☢☢ **MAKE SURE:** ☢☢
+
+You create a huggingface token, go to [this link](https://huggingface.co/settings/tokens), then `create new token` or copy available token with the `Write` role.
+
+Instructions:
+
+1. Run the first cell and paste your token into the prompt.  You can get your token from your [huggingface account page](https://huggingface.co/settings/tokens).
+2. You'll need to note in "REPO" where you're uploading to - please go TO your model page or sorry your user page, create a new repo.  This means that unlike colab, where it can CREATE ONE - somehow on jupyter lab it's easier to just have one pre created.
+3. At this stage it can only tolerate ONE type of file PER box, so safetensors for one, pt files for another etc (Three's three boxes)
+4. make sure you change the HFUser to your username and your REPO to your name. It must exist, this one can't create it.
+5. Cry when it's all completed
+
+   WARNING: in. a proxy envioronment this may be slow.
+
+
+
+-----------------
+## CHANGES TO JUPYTER NOTEBOOK (NOT COLAB)
+    
+    1. Yoinked 90% of the code from EveryDream2Trainer
+    2. Keeping Credit for Nocrypt because that's who made the original stuff.
+    3. ATTEMPTING to get the requirements IN The notebook in case it legit cries
+    4. Crawed into a hole nobody can find me now - *hiding under a rock*
+    5. Cleared up how to work it, got it working on Vast and Runpod.
+
+    
+-----------------
+## ♦♦ **COLAB INSTRUCTIONS** ♦♦
+
+### ✅ **Mount Drive!**
+This is extremely optional, but y'know if you need it! 
 
 ### ✅ **Imjoy-Elfinder**
 
 An optional file viewer that may give you a more visual way of looking at your files. Also good if you need to upload files instead of using terminal or gdrive. 
-
------------------
 
 ###  ✅ **Hugging Face Hub Options**
 
@@ -62,12 +78,21 @@ Note 3.1 was yoinked because right now I don't know how to patch it to work outs
 Make sure you `MOUNT` your google drive, I've patched in `Imjoy-Elfinder` for kicks. - Visual people like this, I know I do.
 
 -----------------
-**<small> *Forked from LYNN - AND NOCRYPT - Literally just yoinked it from this notebook:* https://colab.research.google.com/drive/1wEa-tS10h4LlDykd87TF5zzpXIIQoCmq**
+### ***Forked from - EVERYDREAM2 TRAINER - LYNN - AND NOCRYPT - Literally just yoinked it from this notebook:***
+    
+**https://colab.research.google.com/drive/1wEa-tS10h4LlDykd87TF5zzpXIIQoCmq** 
+    
+**https://github.com/victorchall/EveryDream2trainer**
 
-Jupyter notebook for VAST, RUNPOD and other rented GPUs forks code from here: https://github.com/victorchall/EveryDream2trainer
-(Instructions are different then the colab one, the colab one MAY Not work on vast or main jupyter outside of google colab)
+-----------------
 
+## Support? 
 
+Earth and Dusk Discord because REASONS: https://discord.gg/5t2kYxt7An
+
+Support my stupid lack of coding here: https://ko-fi.com/duskfallcrew
+
+-----------------
 
 
 
