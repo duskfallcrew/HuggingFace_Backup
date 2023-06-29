@@ -28,24 +28,13 @@ You create a huggingface token, go to [this link](https://huggingface.co/setting
 Instructions:
 
 1. Run the first cell and paste your token into the prompt.  You can get your token from your [huggingface account page](https://huggingface.co/settings/tokens).
-2. You'll need to note in "REPO" where you're uploading to - please go TO your model page or sorry your user page, create a new repo.  This means that unlike colab, where it can CREATE ONE - somehow on jupyter lab it's easier to just have one pre created.
+2. You'll need to note in "REPO" where you're uploading to   
 3. At this stage it can only tolerate ONE type of file PER box, so safetensors for one, pt files for another etc (Three's three boxes)
-4. make sure you change the HFUser to your username and your REPO to your name. It must exist, this one can't create it.
-5. Cry when it's all completed
+4. make sure you change the HFUser to your username
+5. Change your REPO to your repo name. It must exist, this one can't create it.
+6. Cry when it's all completed
 
    WARNING: in. a proxy envioronment this may be slow.
-
-
-
------------------
-## CHANGES TO JUPYTER NOTEBOOK (NOT COLAB)
-    
-    1. Yoinked 90% of the code from EveryDream2Trainer
-    2. Keeping Credit for Nocrypt because that's who made the original stuff.
-    3. ATTEMPTING to get the requirements IN The notebook in case it legit cries
-    4. Crawed into a hole nobody can find me now - *hiding under a rock*
-    5. Cleared up how to work it, got it working on Vast and Runpod.
-
     
 -----------------
 ## ♦♦ **COLAB INSTRUCTIONS** ♦♦
@@ -77,12 +66,6 @@ Note 3.1 was yoinked because right now I don't know how to patch it to work outs
 
 Make sure you `MOUNT` your google drive, I've patched in `Imjoy-Elfinder` for kicks. - Visual people like this, I know I do.
 
------------------
-### ***Forked from - EVERYDREAM2 TRAINER - LYNN - AND NOCRYPT - Literally just yoinked it from this notebook:***
-    
-**https://colab.research.google.com/drive/1wEa-tS10h4LlDykd87TF5zzpXIIQoCmq** 
-    
-**https://github.com/victorchall/EveryDream2trainer**
 
 -----------------
 
@@ -92,10 +75,44 @@ Earth and Dusk Discord because REASONS: https://discord.gg/5t2kYxt7An
 
 Support my stupid lack of coding here: https://ko-fi.com/duskfallcrew
 
+Find our models here: https://civitai.com/user/duskfallcrew
+
+
+![Discord](https://img.shields.io/discord/1024442483750490222?label=Earth%26Dusk&style=plastic) [![ko-fi](https://img.shields.io/badge/Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/duskfallcrew)
+
+
 -----------------
+### CHANGES SECTION AND CREDITS BELOW
+
+-----------------
+## CHANGES TO JUPYTER NOTEBOOK (NOT COLAB)
+    
+    1. Yoinked 90% of the code from EveryDream2Trainer
+    2. Keeping Credit for Nocrypt because that's who made the original stuff.
+    3. ATTEMPTING to get the requirements IN The notebook in case it legit cries
+    4. Crawed into a hole nobody can find me now - *hiding under a rock*
+    5. Cleared up how to work it, got it working on Vast and Runpod.   
+
+-----------------
+## ***Forked from - EVERYDREAM2 TRAINER - LYNN - AND NOCRYPT - Literally just yoinked it from this notebook:***
+
+Credtis for original codes for Colab - NOCRYPT
+[![](https://dcbadge.vercel.app/api/shield/442099748669751297?style=flat)](https://lookup.guru/442099748669751297) [![ko-fi](https://img.shields.io/badge/Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/nocrypt) [![ko-fi](https://img.shields.io/badge/Patreon-F1465A?logo=patreon&logoColor=white&style=flat)](https://patreon.com/nocrypt) 
+
+Open the SD Colab here: 
+<a target="_blank" href="https://colab.research.google.com/drive/1wEa-tS10h4LlDykd87TF5zzpXIIQoCmq">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+-----
+
+Jupyter/EveryDream:
+**https://github.com/victorchall/EveryDream2trainer**
 
 
+If you've copied this to drive and it's no longer working check here: https://github.com/kieranxsomer/HuggingFace_Backup
 
 
+WIP: May see if we can patch the other version from jupyter as an extension in the colab version later on.
 
 
