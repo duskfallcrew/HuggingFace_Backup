@@ -21,6 +21,12 @@ If you've copied this to drive and it's no longer working check here: https://gi
 
 This. now works at RUNPOD AND VAST, and due to the patching should work with all file types, but see box 3 for what file types are suggested. 
 
+WARNING: 
+Make sure if you're using VAST, do not use "JUPYTER LABS" direct - use Jupyter PROXY.
+Runpod doesn't give you an option between them, so this should be fine.
+
+Currently on labs we get a "NO MODULE FOUND" for a bunch of conflicts that VENV isn't fixable with until we look into it. 
+
 ### ☢☢ **MAKE SURE:** ☢☢
 
 You create a huggingface token, go to [this link](https://huggingface.co/settings/tokens), then `create new token` or copy available token with the `Write` role.
