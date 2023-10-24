@@ -10,6 +10,8 @@
 <small> An extremely weird fork of content from Nocrypt's notebook, and as well as EveryDream2Trainer for JupyterLabs by a DID system that has no clue how to code. We'd call it opinionated! This is MISSING google stuff, we want to MAYBE add ocalmfuse to it eventually, it is NOW missing EMJOY finder because it's useless in a jupyter environment. (It is! LOL you can easy find stuff otherwise!)
 
 *Quickly upload stuff like merged models to huggingface*
+
+TUTORIAL HERE https://civitai.com/articles/2427
 -----------------
 
 
