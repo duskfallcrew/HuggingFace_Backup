@@ -7,79 +7,70 @@
 ![Discord](https://img.shields.io/discord/1024442483750490222?label=Earth%26Dusk&style=plastic)
 
 # **Hugging Face Backup**
-<small> An extremely weird fork of content from Nocrypt's notebook, and as well as EveryDream2Trainer for JupyterLabs by a DID system that has no clue how to code. We'd call it opinionated! This is MISSING google stuff, we want to MAYBE add ocalmfuse to it eventually, it is NOW missing EMJOY finder because it's useless in a jupyter environment. (It is! LOL you can easy find stuff otherwise!)
 
-*Quickly upload stuff like merged models to huggingface*
-
-TUTORIAL HERE https://civitai.com/articles/2427
------------------
+Welcome to our peculiar repository! This project is a unique amalgamation of content from Nocrypt's notebook and EveryDream2Trainer for JupyterLabs, curated by a diverse DID system with a passion for experimentation. We affectionately call it "opinionated," reflecting our unconventional approach. The primary goal of this repository is to facilitate the quick upload of merged models to Hugging Face. While our focus is on functionality, we prioritize simplicity and accessibility. Currently, this repository supports checkpoints rather than full backups, optimized for local machine usage. While folders may theoretically work for certain model types, such as diffusers, please note that vast user support is limited to Jupyter Lab environments.
 
 
------------------
-## ♦♦ **JUPYTER NOTEBOOK UPDATES** ♦♦
     
------------------
-    
-If you've copied this to drive and it's no longer working check here: https://github.com/kieranxsomer/HuggingFace_Backup
+If you've copied this to drive and it's no longer working check here: https://github.com/duskfallcrew/HuggingFace_Backup
 If you're on CivitAI, the version SHOULD be updated as soon as a version has been pushed :3 
 
 -----------------
+### **Important Note:** 
 
-##  **HUGGING FACE HUB BACKUP** 
 
+Before diving in, ensure you create a Hugging Face token with write permissions. Follow this link for instructions on token creation.
 
-At the moment this only supports CHECKPOINTS, rather than full backups. This works on a local machine.
-FOLDERS may only work in theory - for MODEL types (as in diffusers adn otherwise) rather than anything else.
-VAST USERS: THIS ONLY WORKS ON JUPYTER LAB, NOT SERVER. BE AWARE THAT RUNPOD USES LAB BY DEFAULT.
-
-### ☢☢ **MAKE SURE:** ☢☢
-
-You create a huggingface token, go to [this link](https://huggingface.co/settings/tokens), then `create new token` or copy available token with the `Write` role.
-
------------------
-### ***Forked from - EVERYDREAM2 TRAINER - LINAQRUF - AND NOCRYPT - Literally just yoinked it from this notebook:***
-    
-**https://colab.research.google.com/drive/1wEa-tS10h4LlDykd87TF5zzpXIIQoCmq** 
-    
-**https://github.com/victorchall/EveryDream2trainer**
-
-**https://colab.research.google.com/github/Linaqruf/sdxl-model-converter/blob/main/sdxl_model_converter.ipynb**
+You need to create a huggingface token, go to [this link](https://huggingface.co/settings/tokens), then `create new token` or copy available token with the `Write` role.
 
 -----------------
 
-## Support? 
+### Support? 
 
-Earth and Dusk Discord because REASONS: https://discord.gg/5t2kYxt7An
+Bugs can be tracked via the PR & Bug tracker on github, or Civitai DM/comment system, or via the Earth & Dusk Discord. 
 
-Support my stupid lack of coding here: https://ko-fi.com/duskfallcrew
+-----------------
+
+### Collaboration
+
+I am NOT A programmer by nature, I patch with what little knowledge I have. I Failed programming several times over the years, so if something needs cleaning up and you want to patch it - pull request it!
 
 -----------------
 ## About & Sponsored
 
-Want to see more? We're starting to release EXCLUSIVE Content via our patreon: https://patreon.com/earthndusk
+We are a system of over 300 alters, proudly navigating life with Dissociative Identity Disorder, ADHD, Autism, and CPTSD. We believe in the potential of AI to break down barriers and enhance aspects of mental health, even as it presents challenges. Our creative journey is an ongoing exploration of identity and expression, and we invite you to join us in this adventure.
 
-"WE"? - We have Dissociative identity disorder, ADHD, Autism and CPTSD - "WE" as in we're a system of over 200 alters, and we're not ashamed about it. We believe that AI can break down barriers in some aspects of mental health, but we also believe that AI can hinder aspects of it.
+###  Join Our Community:
+We're always looking for more content creators to collaborate with and support. Join us on our various platforms:
 
-We're gunning for our huge exhibition project watch this space: https://www.end-media.org
+Website: [End Media](https://www.end-media.org/)
+ 
+Discord: [Join our Discord](https://discord.gg/5t2kYxt7An)
 
-Our photography (WHEN WE DID IT) is available for FREE via Unsplash and feel free to use it in a Lora or a Model:
+Backups: [Hugging Face](https://huggingface.co/EarthnDusk)
 
-https://unsplash.com/@duskfallcrew
+Support Us: [Send a Pizza](https://ko-fi.com/duskfallcrew)
 
-WE ARE PROUDLY SPONSORED BY: https://www.piratediffusion.com/
+Youtube: [Duskfall Music & More](https://www.youtube.com/channel/UCk7MGP7nrJz5awBSP75xmVw)
 
-JOIN THE DISCORD AND DEMAND THINGS OF US:https://discord.gg/5t2kYxt7An
+Spotify: [PLAYLIST](https://open.spotify.com/playlist/00R8x00YktB4u541imdSSf?si=57a8f0f0fe87434e)
 
-JOIN OUR DA GROUP: https://www.deviantart.com/diffusionai
+### Proudly Supported By:
 
-JOIN OUR SUBREDDIT: https://www.reddit.com/r/earthndusk/
+[Pirate Diffusion](https://www.piratediffusion.com/)
 
+[Yodayo](https://yodayo.com/)
 
+### Offsite Community Groups:
 
+[DeviantArt Group](https://www.deviantart.com/diffusionai)
 
+[Subreddit
+](https://www.reddit.com/r/earthndusk/)
 
 -----------------
-## ***Forked from - EVERYDREAM2 TRAINER - LYNN - AND NOCRYPT - Literally just yoinked it from this notebook:***
+
+## ***Forked from - EVERYDREAM2 TRAINER - LINAQRUF - AND NOCRYPT ***
 
 Credtis for original codes for Colab - NOCRYPT
 [![](https://dcbadge.vercel.app/api/shield/442099748669751297?style=flat)](https://lookup.guru/442099748669751297) [![ko-fi](https://img.shields.io/badge/Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/nocrypt) [![ko-fi](https://img.shields.io/badge/Patreon-F1465A?logo=patreon&logoColor=white&style=flat)](https://patreon.com/nocrypt) 
@@ -89,15 +80,10 @@ Open the SD Colab here:
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
------
 
-Jupyter/EveryDream:
+###  Jupyter/EveryDream:
 **https://github.com/victorchall/EveryDream2trainer**
 
-
-If you've copied this to drive and it's no longer working check here: https://github.com/kieranxsomer/HuggingFace_Backup
-
-
-WIP: May see if we can patch the other version from jupyter as an extension in the colab version later on.
+-----------------
 
 
