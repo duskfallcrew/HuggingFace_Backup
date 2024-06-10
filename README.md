@@ -1,6 +1,6 @@
 # **Hugging Face Backup**
 
-Welcome to our peculiar repository! This project is a unique amalgamation of content from Nocrypt's notebook and EveryDream2Trainer for JupyterLabs, curated by a diverse DID system with a passion for experimentation. We affectionately call it "opinionated," reflecting our unconventional approach. The primary goal of this repository is to facilitate the quick upload of merged models to Hugging Face. While our focus is on functionality, we prioritize simplicity and accessibility. Currently, this repository supports checkpoints rather than full backups, optimized for local machine usage. While folders may theoretically work for certain model types, such as diffusers, please note that vast user support is limited to Jupyter Lab environments.
+Welcome to our peculiar repository! This project is a unique amalgamation of content from Nocrypt's notebook and EveryDream2Trainer for JupyterLabs, curated by a diverse DID system with a passion for experimentation. We affectionately call it "opinionated," reflecting our unconventional approach. The primary goal of this repository is to facilitate the quick upload of merged models to Hugging Face. While our focus is on functionality, we prioritize simplicity and accessibility.
 
 If you want me to learn more programming, or want to fund my absolute nightmare of upcoming costs for model training:
 
@@ -8,8 +8,8 @@ If you want me to learn more programming, or want to fund my absolute nightmare 
     
 If you've copied this to drive and it's no longer working check here: https://github.com/duskfallcrew/HuggingFace_Backup
 
-If you're looking to easily open the Colab version please see: [<a target="_blank" href="https://colab.research.google.com/github/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+If you're looking to easily open the Colab version please see: [<a target="_blank" href="https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/main/HuggingFace_Backup_2024_Colab.ipynb"> 
+<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 ](https://drive.google.com/file/d/14hn5qEfDvL1WAJcEEjFM0zY9598qe59F/view?usp=sharing)
 
@@ -88,4 +88,29 @@ Open the SD Colab here:
 
 -----------------
 
+
+#### CHANGELOG
+    
+1 Incorporated 90% of the code from EveryDream2Trainer (by Victorchall), specifically the Python widget near the bottom.
+
+2 Acknowledged Nocrypt for the original contributions and maintained proper credit.
+
+3 Attempted to include all necessary requirements within the Jupyter notebook. If anything is missing, please let me know.
+
+4 Admitting to my limited programming skills—feel free to fork and modify this project on github.
+
+5 Corrected the code from all_ckpts = f for f in glob.glob"*.safetensor" to all_ckpts = f for f in glob.glob "*.safetensors" to ensure proper functionality.
+
+6 Added instructions using my own natural language for clarity.
+
+7 Translated the instructions to GPT and added them to GitHub.
+
+8 Enhanced the Jupyter edition with clearer instructions.
+
+9 Set a reminder to update the Colab version to reflect the latest changes.
+
+10 Updated Colab to mostly match Jupyter, and fixed both folder uploaders to have extra functions thanks to Chat GPT.
+
+    
+-----------------
 
