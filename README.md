@@ -1,18 +1,20 @@
-
-
-<a target="_blank" href="https://colab.research.google.com/github/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
-
-![Discord](https://img.shields.io/discord/1024442483750490222?label=Earth%26Dusk&style=plastic)
-
 # **Hugging Face Backup**
 
 Welcome to our peculiar repository! This project is a unique amalgamation of content from Nocrypt's notebook and EveryDream2Trainer for JupyterLabs, curated by a diverse DID system with a passion for experimentation. We affectionately call it "opinionated," reflecting our unconventional approach. The primary goal of this repository is to facilitate the quick upload of merged models to Hugging Face. While our focus is on functionality, we prioritize simplicity and accessibility. Currently, this repository supports checkpoints rather than full backups, optimized for local machine usage. While folders may theoretically work for certain model types, such as diffusers, please note that vast user support is limited to Jupyter Lab environments.
 
+If you want me to learn more programming, or want to fund my absolute nightmare of upcoming costs for model training:
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z8L4EO)
     
 If you've copied this to drive and it's no longer working check here: https://github.com/duskfallcrew/HuggingFace_Backup
+
+If you're looking to easily open the Colab version please see: [<a target="_blank" href="https://colab.research.google.com/github/kieranxsomer/HuggingFace_Backup/blob/main/HuggingFace_Backup.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+](https://drive.google.com/file/d/14hn5qEfDvL1WAJcEEjFM0zY9598qe59F/view?usp=sharing)
+
+
+
 If you're on CivitAI, the version SHOULD be updated as soon as a version has been pushed :3 
 
 -----------------
