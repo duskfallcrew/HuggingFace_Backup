@@ -111,6 +111,8 @@ Open the SD Colab here:
 
 10 Updated Colab to mostly match Jupyter, and fixed both folder uploaders to have extra functions thanks to Chat GPT.
 
+11 Removed transformers, the edition of the Jupyter notebook that HAS this update is in a zip file since i uploaded to Civitai first.
+
     
 -----------------
 
