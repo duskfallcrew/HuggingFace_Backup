@@ -14,7 +14,17 @@ This is our cozy mashup of Nocrypt's notebook and EveryDream2Trainer, specifical
 
 ### 🔍 Lost & Found
 - Repo gone missing? Check out [our GitHub](https://github.com/duskfallcrew/HuggingFace_Backup)
-- CivitAI users: We update as soon as we push! 
+- CivitAI users: We update as soon as we push!
+
+## 🌈 HuggingFace Backup - Open In Colab!
+
+<a href="https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/main/HuggingFace_Backup_2024_Colab.ipynb" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
+Random brain note: One click, and you're on your way to AI adventures! Sometimes the simplest portals lead to the most magical places! ✨
+
+Need a quick start? Just hit that shiny button above - it's like our express elevator to the cloud! Your models are about to get their own cozy home on HuggingFace! 🏠
 
 ## 🌈 About Us
 Heya! We're a vibrant system of 300+ alters, proudly rocking life with DID, ADHD, Autism, and CPTSD. We believe AI can be a game-changer for mental health and creativity, and we're here to explore that potential together! 
