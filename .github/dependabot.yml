@@ -1,0 +1,26 @@
+# 🤖 Dependabot Configuration - Your Friendly Update Assistant!
+version: 2
+updates:
+  # 🐍 Python Packages (for our notebook magic!)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"      # Let's start the week fresh!
+      time: "09:00"      # Early bird gets the updates!
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "automated"
+    commit-message:
+      prefix: "📦"
+      include: "scope"
+
+  # 🎯 GitHub Actions (keeping our workflows sparkly!)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "automation"
+      - "dependencies"
