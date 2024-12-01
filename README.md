@@ -1,118 +1,71 @@
-# **Hugging Face Backup**
+# 🌟 HuggingFace Backup - Where Magic Happens!
 
-Welcome to our peculiar repository! This project is a unique amalgamation of content from Nocrypt's notebook and EveryDream2Trainer for JupyterLabs, curated by a diverse DID system with a passion for experimentation. We affectionately call it "opinionated," reflecting our unconventional approach. The primary goal of this repository is to facilitate the quick upload of merged models to Hugging Face. While our focus is on functionality, we prioritize simplicity and accessibility.
+Hey there, fellow adventurers! Welcome to our delightfully unique corner of the AI universe! 🚀
 
-If you want me to learn more programming, or want to fund my absolute nightmare of upcoming costs for model training:
+## 💫 What's This All About?
+This is our cozy mashup of Nocrypt's notebook and EveryDream2Trainer, specifically tuned for JupyterLabs by a creative DID system who loves to experiment. Think of it as our "opinionated" take on things - because sometimes the best tools come with a bit of personality!
 
+### 🎯 What We Do:
+- Quick and easy uploads of merged models to Hugging Face
+- Focus on checkpoints (not full backups)
+- Made for local machine love
+- Works with Jupyter environments (Amazon Sagemaker, Vast.Ai, Runpod, etc.)
+- Not for Google Colab (but that's okay!)
+
+### 🔍 Lost & Found
+- Repo gone missing? Check out [our GitHub](https://github.com/duskfallcrew/HuggingFace_Backup)
+- CivitAI users: We update as soon as we push! 
+
+## 🌈 About Us
+Heya! We're a vibrant system of 300+ alters, proudly rocking life with DID, ADHD, Autism, and CPTSD. We believe AI can be a game-changer for mental health and creativity, and we're here to explore that potential together! 
+
+### 🤝 Let's Connect!
+- 🏠 [End Media](https://www.end-media.org/)
+- 🎮 [Discord Community](https://discord.gg/5t2kYxt7An)
+- 🤗 [HuggingFace Space](https://huggingface.co/EarthnDusk)
+- 🎵 [YouTube](https://www.youtube.com/channel/UCk7MGP7nrJz5awBSP75xmVw)
+- 🎨 [DeviantArt Group](https://www.deviantart.com/diffusionai)
+- 🎪 [Subreddit](https://www.reddit.com/r/earthndusk/)
+
+### ☕ Support Our Adventures
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z8L4EO)
-    
-If you've copied this to drive and it's no longer working check here: https://github.com/duskfallcrew/HuggingFace_Backup
 
-If you're looking to easily open the Colab version please see: [<a target="_blank" href="https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/main/HuggingFace_Backup_2024_Colab.ipynb"> 
-<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
-](https://drive.google.com/file/d/14hn5qEfDvL1WAJcEEjFM0zY9598qe59F/view?usp=sharing)
+## 🏴‍☠️ Proudly Supported By
+- [Pirate Diffusion](https://www.piratediffusion.com/)
+- [Yodayo](https://yodayo.com/)
 
+## 🛠️ Need Help?
+Found a bug? We've got multiple ways to help:
+- GitHub PR & Bug tracker
+- CivitAi DM/comments
+- Earth & Dusk Discord
 
+## 💝 Credits & Origins
+Big thanks to our code ancestors:
+- EVERYDREAM2 TRAINER https://github.com/victorchall/EveryDream2trainer
+- LINAQRUF
+- NOCRYPT [![](https://dcbadge.vercel.app/api/shield/442099748669751297?style=flat)](https://lookup.guru/442099748669751297)
 
-If you're on CivitAI, the version SHOULD be updated as soon as a version has been pushed :3 
-
------------------
-### **Important Note:** 
-
-
-Before diving in, ensure you create a Hugging Face token with write permissions. Follow this link for instructions on token creation.
-
-You need to create a huggingface token, go to [this link](https://huggingface.co/settings/tokens), then `create new token` or copy available token with the `Write` role.
-
------------------
-
-### Support? 
-
-Bugs can be tracked via the PR & Bug tracker on github, or Civitai DM/comment system, or via the Earth & Dusk Discord. 
-
------------------
-
-### Collaboration
-
-I am NOT A programmer by nature, I patch with what little knowledge I have. I Failed programming several times over the years, so if something needs cleaning up and you want to patch it - pull request it!
-
------------------
-## About & Sponsored
-
-We are a system of over 300 alters, proudly navigating life with Dissociative Identity Disorder, ADHD, Autism, and CPTSD. We believe in the potential of AI to break down barriers and enhance aspects of mental health, even as it presents challenges. Our creative journey is an ongoing exploration of identity and expression, and we invite you to join us in this adventure.
-
-###  Join Our Community:
-We're always looking for more content creators to collaborate with and support. Join us on our various platforms:
-
-Website: [End Media](https://www.end-media.org/)
- 
-Discord: [Join our Discord](https://discord.gg/5t2kYxt7An)
-
-Backups: [Hugging Face](https://huggingface.co/EarthnDusk)
-
-Support Us: [Send a Pizza](https://ko-fi.com/duskfallcrew)
-
-Youtube: [Duskfall Music & More](https://www.youtube.com/channel/UCk7MGP7nrJz5awBSP75xmVw)
-
-Spotify: [PLAYLIST](https://open.spotify.com/playlist/00R8x00YktB4u541imdSSf?si=57a8f0f0fe87434e)
-
-### Proudly Supported By:
-
-[Pirate Diffusion](https://www.piratediffusion.com/)
-
-[Yodayo](https://yodayo.com/)
-
-### Offsite Community Groups:
-
-[DeviantArt Group](https://www.deviantart.com/diffusionai)
-
-[Subreddit
-](https://www.reddit.com/r/earthndusk/)
-
------------------
-
-## ***Forked from - EVERYDREAM2 TRAINER - LINAQRUF - AND NOCRYPT ***
-
-Credtis for original codes for Colab - NOCRYPT
-[![](https://dcbadge.vercel.app/api/shield/442099748669751297?style=flat)](https://lookup.guru/442099748669751297) [![ko-fi](https://img.shields.io/badge/Ko--fi-F16061?logo=ko-fi&logoColor=white&style=flat)](https://ko-fi.com/nocrypt) [![ko-fi](https://img.shields.io/badge/Patreon-F1465A?logo=patreon&logoColor=white&style=flat)](https://patreon.com/nocrypt) 
-
-Open the SD Colab here: 
+Try the original SD Colab:
 <a target="_blank" href="https://colab.research.google.com/drive/1wEa-tS10h4LlDykd87TF5zzpXIIQoCmq">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
+## 📝 Changelog: Our Journey So Far
+1. 🔧 Added EveryDream2Trainer's Python widget magic
+2. 🌟 Kept Nocrypt's awesome contributions front and center
+3. 📦 Packed all the essentials into one Jupyter notebook
+4. 🤓 Made friends with proper file extensions (*.safetensors)
+5. 📝 Wrote instructions in human-friendly language
+6. 🤖 Got GPT to help make things clearer
+7. 🎨 Prettied up the Jupyter edition
+8. 🔄 Synced up Colab and Jupyter versions
+9. 🧹 Cleaned up dependencies (bye-bye, unnecessary transformers!)
+10. ✨ Added some extra folder upload superpowers
+11. Cleaned up Colab & Updated Colab
 
-###  Jupyter/EveryDream:
-**https://github.com/victorchall/EveryDream2trainer**
-
------------------
+Remember: We're not pro programmers, and that's totally okay! If you see something that could be better, pull requests are always welcome! 🎉
 
 
-#### CHANGELOG
-    
-1 Incorporated 90% of the code from EveryDream2Trainer (by Victorchall), specifically the Python widget near the bottom.
 
-2 Acknowledged Nocrypt for the original contributions and maintained proper credit.
-
-3 Attempted to include all necessary requirements within the Jupyter notebook. If anything is missing, please let me know.
-
-4 Admitting to my limited programming skills—feel free to fork and modify this project on github.
-
-5 Corrected the code from all_ckpts = f for f in glob.glob"*.safetensor" to all_ckpts = f for f in glob.glob "*.safetensors" to ensure proper functionality.
-
-6 Added instructions using my own natural language for clarity.
-
-7 Translated the instructions to GPT and added them to GitHub.
-
-8 Enhanced the Jupyter edition with clearer instructions.
-
-9 Set a reminder to update the Colab version to reflect the latest changes.
-
-10 Updated Colab to mostly match Jupyter, and fixed both folder uploaders to have extra functions thanks to Chat GPT.
-
-11 Removed transformers, the edition of the Jupyter notebook that HAS this update is in a zip file since i uploaded to Civitai first.
-
-    
------------------
 
