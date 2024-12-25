@@ -8,17 +8,9 @@ Coded With Help From:
 
 ![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white) 
 
-
 Languages:
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
-Open In Colab:
-
- <a target="_blank" href="https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/Huggingface_Backup/HuggingFace_Backup_2024_Colab.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a> <br/>
-
 
 Huggingface Option:
 
@@ -28,7 +20,12 @@ Always check Github updates:
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/duskfallcrew/HuggingFace_Backup)
 
+------
+Open In Colab:
 
+ <a target="_blank" href="https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/Huggingface_Backup/HuggingFace_Backup_2024_Colab.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a> <br/>
 
 ------
 
