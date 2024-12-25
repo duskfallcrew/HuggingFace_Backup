@@ -116,7 +116,8 @@ Try the original SD Colab:
 9.  🧹 Cleaned up dependencies (bye-bye, unnecessary transformers!)
 10. ✨ Added some extra folder upload superpowers
 11. Cleaned up Colab & Updated Colab
-12. Colab is not fixed yet - hold fire.
+12. Added more concise features to the widgets-Colab is working again.
 13. Gemini overhaul
+14. Added more file types to Colab, streamlined the instructions
     
 Remember: We're not pro programmers, and that's totally okay! If you see something that could be better, pull requests are always welcome! 🎉
