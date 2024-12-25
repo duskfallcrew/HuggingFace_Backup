@@ -141,282 +141,294 @@ Remember: Your creative journey is valid, no matter which path you choose! 🌈
 # @markdown ## Let's get your workspace ready for some AI magic! ✨
 
 # @markdown ### What's in the Box?
-# @markdown - HuggingFace Hub (for all your model adventures)
-# @markdown - IPython Widgets (makes things pretty!)
-# @markdown - Some extra goodies for file handling
+# @markdown - Hugging Face Hub (for all your model adventures)
+# @markdown - IPython Widgets (for a prettier interface)
+# @markdown - Essential file handling tools
 
-print("🔍 Checking what we need...")
+print("🔍 Starting the setup process...")
 
-def check_and_install(package, install_name=None):
+def check_and_install(package, install_name=None, verbose=False):
+    """Checks if a package is installed and installs it if needed."""
     import importlib
     if install_name is None:
         install_name = package
     try:
         importlib.import_module(package)
-        print(f"✨ {package} is already installed!")
+        print(f"✅ {package} is already installed.")
     except ImportError:
         print(f"📦 Installing {package}...")
-        !pip install -q {install_name}
+        if verbose:
+             !pip install {install_name}
+        else:
+            !pip install -q {install_name}
+        print(f"✨ {package} installed successfully.")
+    except Exception as e:
+        print(f"❌ An error occurred during install of {package}: {e}")
 
-# Essential packages for our adventure!
+# Packages needed for our project
 required_packages = {
-    'huggingface_hub': '--force-reinstall -q huggingface_hub',  # Fresh install for best results
-    'ipywidgets': 'ipywidgets',                                 # For our lovely interface
-    'glob': 'glob2'                                            # For finding files
+    'huggingface_hub': '--force-reinstall huggingface_hub', #Reinstalls if exists
+    'ipywidgets': 'ipywidgets',
+    'glob': 'glob',  # Changed to glob, since glob2 is not essential here
+    'tqdm': 'tqdm'   # Install tqdm
 }
 
-# Install our magical ingredients
+# Run installations
 for package, install_cmd in required_packages.items():
-    check_and_install(package, install_cmd)
+    check_and_install(package, install_cmd, verbose=True)  #Turn verbose output on
 
-# Clean up any installation messages
+# Clean up output
 from IPython.display import clear_output
 clear_output()
 
 print("""
-✨ All set and ready to roll! Here's what we've got cooking:
+🎉 All set! Here's a summary of what was installed:
 
-🤗 HuggingFace Hub - Your portal to model magic
-🎨 IPython Widgets - Making everything pretty
-📁 File Handling - Keeping things organized
+🤗 Hugging Face Hub - Your portal to model magic
+🎨 IPython Widgets - To make things pretty
+📁 File Handling - Tools to keep things organized
+📊 Progress Bars - For better tracking of uploads
 
-If you run into any quirks or missing pieces:
-1. Don't panic! We've got your back!
-2. Try running this cell again
-3. If things are still wonky, drop by our Discord for help!
+Having issues? Here's a checklist:
+1. Try running this cell again
+2. Ensure your Colab runtime is not encountering errors
+3. If still wonky, drop by our Discord for help!
 
-Now, let's make some AI magic happen! 🌟
+Let's make some AI magic! 🚀
 """)
 
-# @title 🔐 Connect to HuggingFace Hub
-# @markdown ## Hey there, fellow creator! Let's get you logged in! ✨
+# @title 🔐 Connect to Hugging Face Hub - Enhanced
+# @markdown ## Let's get you logged into your Hugging Face account! ✨
 
 # @markdown ### Quick Guide:
-# @markdown 1. First time here? Pop over to [HuggingFace](https://huggingface.co/) and create your free account!
-# @markdown 2. Grab your special key from the [tokens page](https://huggingface.co/settings/tokens)
-# @markdown 3. Click `New Token` (or copy an existing one with `Write` access)
-# @markdown 4. Paste your magical key below and let's get this party started! 🎉
+# @markdown 1. **New User?** Head over to [Hugging Face](https://huggingface.co/) and create a free account.
+# @markdown 2. **Get Your Token:** Visit your [tokens page](https://huggingface.co/settings/tokens).
+# @markdown 3. **Create a Token:** Click 'New Token' or copy an existing one (ensure it has `Write` access).
+# @markdown 4. **Paste Below:** Copy and paste your token into the field below.
 
+print("✨ Checking Hugging Face connection...")
+
+# Check if hub_ok exists, set it if not
 try:
     hub_ok
 except NameError:
-    print("✨ Setting up your HuggingFace connection...")
-    !pip install --force-reinstall -qqqq huggingface_hub
+    print("📦 Installing huggingface_hub (if needed)...")
+    !pip install --force-reinstall -q huggingface_hub
     hub_ok = True
 
 from IPython.display import clear_output
 from huggingface_hub import login
+clear_output() #clear the output
 
-# Clear any installation messages to keep things tidy
-clear_output()
+# @markdown ### 🔑 Your Hugging Face Token
+write_token = "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"  # @param {type:"string"}
 
-# @markdown ### 🔑 Your Special Access Key
-write_token = "" # @param {type:"string"}
-
-# Let's get you logged in!
 try:
-    login(write_token, add_to_git_credential=True)
-    print("🎉 Woohoo! You're all connected and ready to rock!")
-    print("💫 Your HuggingFace powers have been activated!")
+    if write_token:
+        print("🔑 Logging you in with your Hugging Face token...")
+        login(write_token, add_to_git_credential=True)
+        print("🎉 Successfully logged in to Hugging Face! Your powers are activated!")
+        print("💫 You're ready to upload models and files.")
+    else:
+        print("⚠️ No token was provided. Please paste your Hugging Face token above.")
 except Exception as e:
-    print("❌ Oops! Something's not quite right with that token.")
-    print("🤔 Double-check your key and make sure it has 'Write' access!")
-    print(f"🔍 Here's what went wrong: {str(e)}")
+    print("❌ Login failed. Please check the following:")
+    print(f" 1. Ensure your token is correct and has 'Write' access.")
+    print(f" 2. The error is: {e}")
+    print("🤔 If you're still having problems, visit our Discord for help!")
     raise
 
-# @title 🏗️ Repository Setup Wizard
-# @markdown ### Let's get your magical storage space ready! ✨
+# @title 🏗️ Repository Setup Wizard - Enhanced
+# @markdown ### Let's get your Hugging Face repository ready! ✨
 
 from huggingface_hub.utils import validate_repo_id, HfHubHTTPError
 from huggingface_hub import HfApi
+import os
 
 # @markdown #### 🎨 Customize Your Repository
-repo_name = "Sample_Backup_Please_Rename" # @param {type:"string"}
-make_private = True # @param {type:"boolean"} {description:"Keep your repo private?"}
-clone_repo = True # @param {type:"boolean"} {description:"Download repo to Colab?"}
+repo_name = "Test_Box_Poke_Me" # @param {type:"string"}
+make_private = False  # @param {type:"boolean"} {description:"Keep your repo private?"}
+clone_repo = True  # @param {type:"boolean"} {description:"Download repo to Colab?"}
 
-# Set up our connection to HuggingFace
-api = HfApi()
-user = api.whoami()
-model_repo = f"{user['name']}/{repo_name.strip()}"
+print("🛠️ Setting up your Hugging Face repository...")
 
 try:
-    # Validate the repo name (just making sure it's comfy!)
+    # Initialize the Hugging Face API
+    api = HfApi()
+    user = api.whoami()
+    model_repo = f"{user['name']}/{repo_name.strip()}"
+
+    # Validate the repository name
+    print(f"🔍 Validating repository name: '{model_repo}'")
     validate_repo_id(model_repo)
 
-    # Create the repo if it doesn't exist
+    # Create or check the repository
+    print("📦 Creating repository if it doesn't exist...")
     api.create_repo(
         repo_id=model_repo,
         private=make_private,
-        exist_ok=True  # This prevents the try/except madness!
+        exist_ok=True
     )
     print(f"🎉 Repository '{model_repo}' is ready for action!")
 
+    # Clone the repository if requested
+    if clone_repo:
+        print("\n📦 Cloning your repository (with LFS)...")
+        clone_path = f"/content/{repo_name.strip()}"
+
+        if os.path.exists(clone_path):
+            print(f"⚠️  Repository already exists at '{clone_path}'. Skipping clone step.")
+        else:
+            !git lfs install --skip-smudge
+            !export GIT_LFS_SKIP_SMUDGE=1
+            !git clone https://huggingface.co/{model_repo} {clone_path}
+            print("✨ Repository cloned successfully!")
+
 except Exception as e:
-    print(f"❌ Oops! Something went wrong: {str(e)}")
+    print(f"❌ An error occurred during repository setup: {e}")
     raise
 
-# Clone the repo if requested
-if clone_repo:
-    print("\n📦 Downloading your repo (with some LFS magic)...")
-    !git lfs install --skip-smudge
-    !export GIT_LFS_SKIP_SMUDGE=1
-    !git clone https://huggingface.co/{model_repo} /content/{repo_name}
-    print("✨ All done! Your repo is ready to rock!")
+print("✅ Repository setup complete!")
 
-# @title 🚀 HuggingFace File Uploader
+# @title 🚀 Hugging Face File Uploader - Interactive
+# @markdown ## 🌟 Ready to Upload Your Files to Hugging Face?
 
-# @markdown ## 🌟 Welcome to our File Upload Adventure!
 # @markdown ### Quick Guide:
-# @markdown 1. Make sure you've created a repo on HuggingFace first
-# @markdown 2. Fill in your username/organization and repo name
-# @markdown 3. Pick your file type from our magical dropdown
-# @markdown 4. Choose whether you want a pull request or direct upload
-# @markdown 5. Hit that upload button and watch the magic happen! ✨
-# @markdown
+# @markdown 1. Fill in your Hugging Face `Organization/Username` and `Repository name`.
+# @markdown 2. Specify the directory to search in below.
+# @markdown 3. Select the files you want to upload using the file picker below.
+# @markdown 4. Click the `Upload` button to begin the upload process.
+
 # @markdown ### Pro Tips:
-# @markdown - Don't see your files? Hit the "Update Files" button! 🔄
-# @markdown - Want to upload multiple files? Just hold Ctrl/Cmd while clicking!
-# @markdown - The commit message is customizable - make it yours! 💝
+# @markdown - If files are missing, ensure they are in the current directory.
+# @markdown - Use Ctrl/Cmd to select multiple files.
+# @markdown - Customize the commit message.
 
 import os
 import glob
 import time
 from pathlib import Path
 from huggingface_hub import HfApi
-from IPython.display import display, HTML, clear_output
+from IPython.display import display, HTML, clear_output, Image
+from tqdm.notebook import tqdm
+from ipywidgets import *
 
 # @markdown ### 📚 Repository Details
-owner = "" # @param {type:"string"}
-repo_name = "" # @param {type:"string"}
+hfuser = "Duskfallcrew"  # @param {type:"string"} {description: "Your Hugging Face Username or Organization"}
+hfrepo = "Test_Box_Poke_Me"  # @param {type:"string"} {description: "Your Hugging Face Repository Name"}
 
 # @markdown ### 🗂️ File Settings
-file_type = "safetensors" # @param ["safetensors", "pt", "pth", "onnx", "pb", "h5", "ckpt", "bin", "json", "yaml", "yml", "txt", "csv", "pkl", "png", "jpg", "jpeg", "webp", "gif", "zip", "tar", "gz"]
-sort_by = "name" # @param ["name", "date"]
+file_type = "mp3"  # @param ["safetensors", "pt", "mp3", "pth", "onnx", "pb", "h5", "ckpt", "bin", "json", "yaml", "yml", "txt", "csv", "pkl", "png", "jpg", "jpeg", "webp", "gif", "zip", "tar", "gz", "mp3", "wav", "ogg", "mp4", "mov", "avi", "mkv"]
+#sort_by = "name"  # @param ["name", "date"]
+
+# @markdown ### 📁 File Location
+file_location = "/content/drive/MyDrive/AI Music" # @param {type:"string"} {description: "The directory to search for files"}
 
 # @markdown ### 💭 Upload Settings
-commit_message = "Upload with Earth & Dusk Huggingface 🤗 Backup" # @param {type:"string"}
-create_pr = False # @param {type:"boolean"}
-clear_after = True # @param {type:"boolean"}
+commit_message = "Upload with Earth & Dusk Huggingface 🤗 Backup"  # @param {type:"string"}
+create_pr = False  # @param {type:"boolean"}
+clear_after = True  # @param {type:"boolean"}
+
 
 def format_size(size):
+    """Formats a file size into a human-readable string."""
     for unit in ['B', 'KB', 'MB', 'GB']:
         if size < 1024:
             return f"{size:.2f} {unit}"
         size /= 1024
     return f"{size:.2f} TB"
 
-def find_files():
-    files = sorted(
-        glob.glob(f"*.{file_type}"),
-        key=os.path.getmtime if sort_by == 'date' else str
-    )
-    print(f"✨ Found {len(files)} {file_type} files:")
-    for f in files:
-        size = os.path.getsize(f)
-        print(f"📁 {f} ({format_size(size)})")
-    return files
+def find_files(file_location, file_type):
+    """Finds files matching the selected file type in the given directory."""
+    try:
+        files = sorted(
+            glob.glob(os.path.join(file_location, f"*.{file_type}")),
+             key=os.path.getmtime if sort_by == 'date' else str
+        )
+        return files
+    except Exception as e:
+        print(f"❌ Error finding files: {e}")
+        return []
 
-def upload_files():
-    if not owner or not repo_name:
-        print("❗ Please fill in both Organization/Username and Repository name")
-        return
+# Widget Setup
+all_ckpts = find_files(file_location, file_type)
+ckpt_picker = SelectMultiple(options=all_ckpts, layout=Layout(width="600px"), description="Select File(s)")
+upload_btn = Button(description='Upload')
+out = Output()
 
-    files = find_files()
-    if not files:
-        print("📝 No files found matching your criteria!")
-        return
+def upload_ckpts(_):
+    repo_id = f"{hfuser}/{hfrepo}"
+    with out:
+        if not ckpt_picker.value:
+             print("Nothing selected for upload, make sure to click one of the files in the list, or verify there are files in the specified directory.")
+             return
+        for ckpt in ckpt_picker.value:
+            print(f"Uploading to HF: huggingface.co/{repo_id}/{os.path.basename(ckpt)}")
+            size = os.path.getsize(ckpt)
+            print(f"📦 Uploading file: {ckpt} ({format_size(size)})")
 
-    api = HfApi()
-    repo_id = f"{owner}/{repo_name}"
-    print(f"🎯 Ready to upload to: huggingface.co/{repo_id}")
-    print("Select files to upload (multiple selection supported)")
+            try:
+                start_time = time.time()
+                response = api.upload_file(
+                    path_or_fileobj=ckpt,
+                    path_in_repo=os.path.basename(ckpt),
+                    repo_id=repo_id,
+                    repo_type=None,
+                    create_pr=create_pr,
+                    commit_message=commit_message
+                )
+                duration = time.time() - start_time
+                print(f"✅ Upload completed in {duration:.1f} seconds")
+            except Exception as e:
+                print(f"❌ Error uploading {ckpt}: {e}")
+        print("\n✨ All uploads complete!")
+        if create_pr:
+          print("🎉 Check your repository for the new Pull Request!")
+        else:
+          print("🎉 Files have been uploaded directly to your repository!")
+        if clear_after:
+            time.sleep(3)
+            clear_output()
 
-    # Show file selection interface
-    from google.colab import output
-    selected = output.eval_js(f"""
-        const files = {files};
-        const selected = await google.colab.dialog.select(files);
-        selected
-    """)
 
-    if not selected:
-        print("No files selected!")
-        return
+upload_btn.on_click(upload_ckpts)
 
-    total_files = len(selected)
-    print(f"\n🚀 Starting upload of {total_files} files...")
+# Display widgets
+box = VBox([
+    ckpt_picker,
+    HBox([
+        Label("HF User:"),
+        Text(value = hfuser, placeholder='YourUSERHERE', disabled = True),
+        Label("HF Repo:"),
+        Text(value = hfrepo, placeholder='ModelNameHere', disabled = True),
+    ]),
+        HBox([
+        Label("File Directory:"),
+        Text(value = file_location, placeholder='/content', disabled = True),
+    ]),
+    upload_btn,
+    out,
 
-    for idx, file in enumerate(selected, 1):
-        size = os.path.getsize(file)
-        print(f"\n📦 File {idx}/{total_files}: {file} ({format_size(size)})")
+])
 
-        try:
-            start_time = time.time()
-            response = api.upload_file(
-                path_or_fileobj=file,
-                path_in_repo=os.path.basename(file),
-                repo_id=repo_id,
-                repo_type=None,
-                create_pr=create_pr,
-                commit_message=commit_message
-            )
-            duration = time.time() - start_time
-            print(f"✅ Upload completed in {duration:.1f} seconds")
-        except Exception as e:
-            print(f"❌ Error uploading {file}: {str(e)}")
-            continue
+display(box)
 
-    print("\n✨ All uploads completed! ✨")
-    if create_pr:
-        print("🎉 Check your repository for the new Pull Request!")
-    else:
-        print("🎉 Files have been uploaded directly to your repository!")
+# Helper function for updating the displayed file path
+def update_file_list(event):
+    global all_ckpts
+    all_ckpts = find_files(file_location, file_type)
+    ckpt_picker.options = all_ckpts
 
-    if clear_after:
-        time.sleep(3)
-        clear_output()
+def on_file_type_change(change):
+    global all_ckpts
+    all_ckpts = find_files(file_location, change.new)
+    ckpt_picker.options = all_ckpts
 
-# Add our friendly buttons
-from IPython.display import HTML
-display(HTML('''
-<style>
-.button-container {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
-}
-.custom-button {
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s;
-}
-.update-btn {
-    background-color: #3498db;
-    color: white;
-}
-.upload-btn {
-    background-color: #2ecc71;
-    color: white;
-}
-.custom-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-</style>
-<div class="button-container">
-    <button class="custom-button update-btn" onclick="google.colab.kernel.invokeFunction('find_files', [], {})">🔄 Update Files</button>
-    <button class="custom-button upload-btn" onclick="google.colab.kernel.invokeFunction('upload_files', [], {})">⬆️ Upload Files</button>
-</div>
-'''))
+#Observe for file path changes
+observe_file_path = Text(value="/content")
+observe_file_path.observe(update_file_list, names='value')
 
-# Register our functions
-from google.colab.output import eval_js
-output.register_callback('find_files', find_files)
-output.register_callback('upload_files', upload_files)
-
-# Show initial file list
-find_files()
+#Observe for file type changes
+observe_file_type = Dropdown(options=["safetensors", "pt", "pth", "mp3", "onnx", "pb", "h5", "ckpt", "bin", "json", "yaml", "yml", "txt", "csv", "pkl", "png", "jpg", "jpeg", "webp", "gif", "zip", "tar", "gz", "mp3", "wav", "ogg", "mp4", "mov", "avi", "mkv"], value = file_type)
+observe_file_type.observe(on_file_type_change, names='value')
+display(HBox([Label("File Type:"), observe_file_type]))
