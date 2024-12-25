@@ -2,13 +2,13 @@
 
 This notebook provides a user-friendly tool for uploading files directly to your Hugging Face repositories. It's designed to streamline your workflow and make sharing your models and data easier.
 
-Colab Users: 
+** 📦 Colab Users:**
 
-<a target="_blank" href="https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/Huggingface_Backup/HuggingFace_Backup_2024_Colab.ipynb">
+1. <a target="_blank" href="https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/Huggingface_Backup/HuggingFace_Backup_2024_Colab.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
+</a> <br/>
 
-<br/>
+
 
 **🔑 Initial Setup (One Time Only)**
 
