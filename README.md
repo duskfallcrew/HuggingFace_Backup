@@ -1,81 +1,122 @@
-# 🌟 HuggingFace Backup - Where Magic Happens!
+# 🚀 Hugging Face Uploader Notebook
 
-Hey there, fellow adventurers! Welcome to our delightfully unique corner of the AI universe! 🚀
+This notebook provides a user-friendly tool for uploading files directly to your Hugging Face repositories. It's designed to streamline your workflow and make sharing your models and data easier.
 
-## 💫 What's This All About?
-This is our cozy mashup of Nocrypt's notebook and EveryDream2Trainer, specifically tuned for JupyterLabs by a creative DID system who loves to experiment. Think of it as our "opinionated" take on things - because sometimes the best tools come with a bit of personality!
+**🔑 Initial Setup (One Time Only)**
 
-### 🎯 What We Do:
-- Quick and easy uploads of merged models to Hugging Face
-- Focus on checkpoints (not full backups)
-- Made for local machine love
-- Works with Jupyter environments (Amazon Sagemaker, Vast.Ai, Runpod, etc.)
-- Not for Google Colab (but that's okay!)
+1.  **Authenticate:**
+    *   Run the `notebook_login()` cell *once* to securely store your Hugging Face API token.
+    *   **Important:** For security, avoid sharing your notebook file or system state after you have run `notebook_login()`. Do not commit your notebook file to a shared repository, as this could expose your API token.
 
-### 🔍 Lost & Found
-- Repo gone missing? Check out [our GitHub](https://github.com/duskfallcrew/HuggingFace_Backup)
-- CivitAI users: We update as soon as we push!
+**🗂️ Using the Uploader**
 
-## 🌈 HuggingFace Backup - Open In Colab!
+1.  **Repository Details:**
+    *   Enter your Hugging Face Organization or Username in the "Owner" field.
+    *   Enter your repository name in the "Repo" field.
 
-<a href="https://colab.research.google.com/github/duskfallcrew/HuggingFace_Backup/blob/main/HuggingFace_Backup_2024_Colab.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
+2.  **Directory Selection:**
+    *   Enter a directory path where your files are located.
+    *   Select the 'Update Dir' button to set that path.
 
-Random brain note: One click, and you're on your way to AI adventures! Sometimes the simplest portals lead to the most magical places! ✨
+3.  **File Selection:**
+    *   Select the appropriate file type from the dropdown menu.
+    *   Select the files you want to upload from the list. You can sort them by name or date modified.
 
-Need a quick start? Just hit that shiny button above - it's like our express elevator to the cloud! Your models are about to get their own cozy home on HuggingFace! 🏠
+4.  **Commit Message (Optional):**
+    *   Add a commit message to your upload, or use the default message.
+
+5.  **Upload Options:**
+    *   Choose whether to create a pull request or upload directly to the main branch.
+    *   Select whether to clear the output after a successful upload.
+
+6.  **Start Upload:**
+    *   Click the "⬆️ Upload" button.
+
+**💡 Important Notes**
+
+*   **Direct Uploads:** This uploader uses the Hugging Face API for direct file uploads, bypassing the need for traditional Git operations for core functionality.
+*   **Git LFS:** Most users will not need to interact with Git or Git LFS. If you need to clone or push changes to a repository *outside this notebook*, it requires a separate Git credential setup (e.g., your operating system's credential manager or SSH keys). This credential is separate from the API token used in the uploader, and should not be stored in this notebook.
+*   **Troubleshooting:** If you encounter any issues, please review the steps or double-check that you have write access to the repository, and that your API token has the correct scope of access.
+
+**📣 Updates & Community**
+
+*   This tool will continue to be updated.
+*   For the latest patches, fixes, and community contributions, visit [https://github.com/duskfallcrew/HuggingFace_Backup](https://github.com/duskfallcrew/HuggingFace_Backup)
+
+We hope this notebook makes your Hugging Face uploads easier! If you have any questions or suggestions, please reach out.
+
+<br/>
 
 ## 🌈 About Us
-Heya! We're a vibrant system of 300+ alters, proudly rocking life with DID, ADHD, Autism, and CPTSD. We believe AI can be a game-changer for mental health and creativity, and we're here to explore that potential together! 
+
+Heya! We're a vibrant system of 300+ alters, proudly rocking life with DID, ADHD, Autism, and CPTSD. We believe AI can be a game-changer for mental health and creativity, and we're here to explore that potential together!
+
+<br/>
 
 ### 🤝 Let's Connect!
-- 🏠 [End Media](https://www.end-media.org/)
-- 🎮 [Discord Community](https://discord.gg/5t2kYxt7An)
-- 🤗 [HuggingFace Space](https://huggingface.co/EarthnDusk)
-- 🎵 [YouTube](https://www.youtube.com/channel/UCk7MGP7nrJz5awBSP75xmVw)
-- 🎨 [DeviantArt Group](https://www.deviantart.com/diffusionai)
-- 🎪 [Subreddit](https://www.reddit.com/r/earthndusk/)
+
+*   🏠 [End Media](https://www.end-media.org/)
+*   🎮 [Discord Community](https://discord.gg/5t2kYxt7An)
+*   🤗 [HuggingFace Space](https://huggingface.co/EarthnDusk)
+*   🎵 [YouTube](https://www.youtube.com/channel/UCk7MGP7nrJz5awBSP75xmVw)
+*   🎨 [DeviantArt Group](https://www.deviantart.com/diffusionai)
+*   🎪 [Subreddit](https://www.reddit.com/r/earthndusk/)
+
+<br/>
 
 ### ☕ Support Our Adventures
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z8L4EO)
 
+<br/>
+
 ## 🏴‍☠️ Proudly Supported By
-- [Pirate Diffusion](https://www.piratediffusion.com/)
-- [Yodayo](https://yodayo.com/)
+
+*   [Pirate Diffusion](https://www.piratediffusion.com/)
+*   [Yodayo](https://yodayo.com/)
+
+<br/>
 
 ## 🛠️ Need Help?
+
 Found a bug? We've got multiple ways to help:
-- GitHub PR & Bug tracker
-- CivitAi DM/comments
-- Earth & Dusk Discord
+
+*   GitHub PR & Bug tracker
+*   CivitAi DM/comments
+*   Earth & Dusk Discord
+
+<br/>
 
 ## 💝 Credits & Origins
+
 Big thanks to our code ancestors:
-- EVERYDREAM2 TRAINER https://github.com/victorchall/EveryDream2trainer
-- LINAQRUF
-- NOCRYPT [![](https://dcbadge.vercel.app/api/shield/442099748669751297?style=flat)](https://lookup.guru/442099748669751297)
+
+*   EVERYDREAM2 TRAINER [https://github.com/victorchall/EveryDream2trainer](https://github.com/victorchall/EveryDream2trainer)
+*   LINAQRUF
+*   NOCRYPT [![](https://dcbadge.vercel.app/api/shield/442099748669751297?style=flat)](https://lookup.guru/442099748669751297)
 
 Try the original SD Colab:
+
 <a target="_blank" href="https://colab.research.google.com/drive/1wEa-tS10h4LlDykd87TF5zzpXIIQoCmq">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
+<br/>
+
 ## 📝 Changelog: Our Journey So Far
-1. 🔧 Added EveryDream2Trainer's Python widget magic
-2. 🌟 Kept Nocrypt's awesome contributions front and center
-3. 📦 Packed all the essentials into one Jupyter notebook
-4. 🤓 Made friends with proper file extensions (*.safetensors)
-5. 📝 Wrote instructions in human-friendly language
-6. 🤖 Got GPT to help make things clearer
-7. 🎨 Prettied up the Jupyter edition
-8. 🔄 Synced up Colab and Jupyter versions
-9. 🧹 Cleaned up dependencies (bye-bye, unnecessary transformers!)
+
+1.  🔧 Added EveryDream2Trainer's Python widget magic
+2.  🌟 Kept Nocrypt's awesome contributions front and center
+3.  📦 Packed all the essentials into one Jupyter notebook
+4.  🤓 Made friends with proper file extensions (*.safetensors)
+5.  📝 Wrote instructions in human-friendly language
+6.  🤖 Got GPT to help make things clearer
+7.  🎨 Prettied up the Jupyter edition
+8.  🔄 Synced up Colab and Jupyter versions
+9.  🧹 Cleaned up dependencies (bye-bye, unnecessary transformers!)
 10. ✨ Added some extra folder upload superpowers
 11. Cleaned up Colab & Updated Colab
-
+12. Colab is not fixed yet - hold fire.
+13. Gemini overhaul
+    
 Remember: We're not pro programmers, and that's totally okay! If you see something that could be better, pull requests are always welcome! 🎉
-
-
-
-
